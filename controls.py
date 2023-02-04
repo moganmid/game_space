@@ -23,12 +23,13 @@ def events(screen, ship, bullets):
             elif event.key == pygame.K_LEFT:
                 ship.mleft = False
 
-def update(bg_color, screen, ship, bullets):
+def update(bg_color, screen, ship, enemy, bullets):
     """Обновление экрана"""
     screen.fill(bg_color)
     for bullet in bullets.sprites():
         bullet.draw_bullet()
     ship.output()
+    enemy.draw()
     pygame.display.flip()
 
 def update_bullets(bullets):

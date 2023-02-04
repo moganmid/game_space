@@ -7,7 +7,7 @@ class Enemy(pygame.sprite.Sprite):
         """инициализация и начальная позиция"""
         super(Enemy, self).__init__()
         self.screen = screen
-        self.image = pygame.image.load('images/enemy.png')
+        self.image = pygame.image.load('image/enemy1.png')
         self.rect = self.image.get_rect()
         self.rect.x = self.rect.width
         self.rect.y = self.rect.height
